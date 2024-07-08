@@ -1,4 +1,4 @@
-#!/home/aishni.narain@intelegencia.com/Desktop/Pycryptodome/venv/bin/python
+#!/home/aishni.narain@intelegencia.com/Desktop/Pycryptodome/Pycryptodome/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -17,7 +17,6 @@ def _ecc_encrypt(ecc, data):
     key = SHA256.new(shared_secret_bytes).digest()[:16]
     cipher_aes = AES.new(key, AES.MODE_EAX)
     ciphertext, tag = cipher_aes.encrypt_and_digest(data)
-    print(cipher_aes.nonce + tag + ciphertext)
     return cipher_aes.nonce + tag + ciphertext
 
 def _ecc_decrypt(ecc, data):
@@ -40,7 +39,3 @@ if TEST_VALUE != test_value_decrypted:
     raise ProtectedError("test value encryption failed")
 else:
     print("Success")
-
-
-
-    
